@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Capytalk",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+	
+		"keywords": {
+			"patterns": [
+				{
+				"name": "variable.name.capytalk",
+				"match": "\\b[a-zA-Z0-9_]*:"
+			},
+			{
+				"name": "constant.language.boolean.capytalk",
+				"match": "\\b(true|false)\\b"
+			},
+			{
+				"name": "comment.line.capytalk",
+				"begin": "\"",
+				"end": "\""
+			},
+			{
+				"name": "string.quoted.single.capytalk",
+			"begin": "'",
+			"end": "'"
+			},
+
+			{
+				"name": "invalid",
+				"match": "!\\w+"
+			},
+			{
+				"name": "entity.name.class.capytalk",
+				"match": "\\?\\w+"
+			},
+			{
+				"name": "constant.numeric.capytalk",
+				"match": "\\b[0-9.]+\\b"
+			},
+			{
+			"name": "markup.bold",
+			"match": "#\\w+"
+			},
+			{
+				"name": "markup.bold.capytalk",
+				"match": "\\b[^!?\\s:][^:\\s]*\\b"
+			}
+		
+		]
+		}
+	
+	},
+	"scopeName": "source.capytalk"
+}

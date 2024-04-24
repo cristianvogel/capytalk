@@ -1,0 +1,25 @@
+{
+  "name": "capytalk",
+  "displayName": "Capytalk",
+  "description": "Syntax highlighter for Kyma Capytalk",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "capytalk",
+      "aliases": ["Capytalk", "capytalk"],
+      "extensions": [".st", ".ct"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "capytalk",
+      "scopeName": "source.capytalk",
+      "path": "./syntaxes/capytalk.tmLanguage.json"
+    }]
+  }
+}
